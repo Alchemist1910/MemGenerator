@@ -1,0 +1,203 @@
+/* Pop Art Container */
+.meme-generator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+
+    /* Pop Art Box */
+    background-color: #ffffff;
+    border: 5px solid #000000;
+    box-shadow: 15px 15px 0px #000000;
+    /* Hard shadow */
+    border-radius: 0;
+    /* Sharp corners */
+
+    font-family: 'Arial Black', 'Impact', sans-serif;
+    color: #000000;
+}
+
+.title {
+    color: #FFE900;
+    /* Pop Yellow */
+    background: #000000;
+    padding: 10px 20px;
+    border: 4px solid #000000;
+    box-shadow: 8px 8px 0px #FF00FF;
+    /* Pop Magenta Shadow */
+    font-size: 3rem;
+    text-transform: uppercase;
+    transform: rotate(-2deg);
+    margin-bottom: 40px;
+    text-align: center;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 2px black;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 40px;
+    background: #00FFFF;
+    /* Cyan background for controls area */
+    padding: 20px;
+    border: 4px solid #000000;
+    box-shadow: 8px 8px 0px #000000;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-group label {
+    font-weight: 900;
+    color: #000000;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    background: #FFE900;
+    display: inline-block;
+    padding: 5px;
+    border: 2px solid #000000;
+    width: fit-content;
+    box-shadow: 3px 3px 0px #000000;
+}
+
+/* Pop Inputs */
+input[type="text"] {
+    padding: 15px;
+    background: #ffffff;
+    border: 3px solid #000000;
+    border-radius: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000000;
+    font-family: 'Courier New', monospace;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2);
+    transition: all 0.1s steps(1);
+}
+
+input[type="text"]:focus {
+    outline: none;
+    background: #ffecec;
+    box-shadow: 5px 5px 0px #FF00FF;
+    transform: translate(-2px, -2px);
+}
+
+/* Pop Drop Zone */
+.drop-zone {
+    border: 4px dashed #000000;
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+}
+
+.drop-zone:hover {
+    background-color: #FFE900;
+    transform: rotate(1deg);
+}
+
+.drop-zone label {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #000000;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.generate-btn,
+.download-btn {
+    flex: 1;
+    padding: 15px;
+    border: 4px solid #000000;
+    border-radius: 0;
+    font-size: 1.2rem;
+    font-weight: 900;
+    cursor: pointer;
+    text-transform: uppercase;
+    position: relative;
+    transition: all 0.1s;
+}
+
+.generate-btn {
+    background: #FF00FF;
+    /* Magenta */
+    color: #ffffff;
+    box-shadow: 6px 6px 0px #000000;
+    text-shadow: 2px 2px 0px #000000;
+}
+
+.generate-btn:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 4px 4px 0px #000000;
+}
+
+.download-btn {
+    background: #FFE900;
+    /* Yellow */
+    color: #000000;
+    box-shadow: 6px 6px 0px #000000;
+}
+
+.download-btn:hover:not(:disabled) {
+    transform: translate(2px, 2px);
+    box-shadow: 4px 4px 0px #000000;
+}
+
+.download-btn:disabled {
+    background: #cccccc;
+    color: #888888;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: translate(4px, 4px);
+}
+
+/* Canvas Container */
+.canvas-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #ffffff;
+    padding: 15px;
+    border: 4px solid #000000;
+    box-shadow: 10px 10px 0px #000000;
+    min-height: 400px;
+    align-items: center;
+    /* Dotted pattern background for canvas area */
+    background-image: radial-gradient(#000 15%, transparent 16%), radial-gradient(#000 15%, transparent 16%);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    background-color: #e0e0e0;
+}
+
+.meme-canvas {
+    max-width: 100%;
+    max-height: 700px;
+    border: 4px solid #000000;
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.placeholder {
+    background: #ffffff;
+    padding: 20px;
+    border: 2px solid #000000;
+    font-weight: bold;
+    transform: rotate(-3deg);
+    box-shadow: 5px 5px 0px #000000;
+}
