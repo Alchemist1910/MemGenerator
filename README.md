@@ -1,5 +1,6 @@
 # 🤪 Pop Art Meme Generator
-HOST URL     mem-generator-cyan.vercel.app
+## 🚀 Live Demo
+👉 [Click here to try MemGenerator](https://mem-generator-cyan.vercel.app/)
 
 A bold, high-contrast, comic-book style **Meme Generator** built with **React** and **HTML5 Canvas**.
 
