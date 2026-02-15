@@ -1,16 +1,70 @@
-# React + Vite
+# 🤪 Pop Art Meme Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A bold, high-contrast, comic-book style **Meme Generator** built with **React** and **HTML5 Canvas**.
 
-Currently, two official plugins are available:
+![Pop Art UI Preview](./MemeGenerator-Preview.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+-   🎨 **Pop Art UI**: A unique aesthetic with thick borders, vibrant CMYK colors, and halftone patterns.
+-   🖼️ **Smart Canvas**: Automatically wraps long text so your memes are always readable.
+-   🃏 **Instant Wit**: Integrated with the **Official Joke API** to generate random setups and punchlines with one click.
+-   📤 **Export Ready**: Download your creations instantly as high-quality PNGs.
+-   🖱️ **Drag & Drop**: Easy image upload interface.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Getting Started
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+-   Node.js (v14 or higher)
+-   npm or yarn
+
+### Installation
+
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/Alchemist1910/MemGenerator.git
+    cd MemGenerator
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Start the development server**
+    ```bash
+    npm run dev
+    ```
+
+4.  Open `http://localhost:5173` in your browser.
+
+## 🛠️ Tech Stack
+
+-   **Frontend**: React, Vite
+-   **Styling**: Plain CSS (Custom Pop Art Theme)
+-   **Logic**: HTML5 Canvas API (Drawing & Download)
+-   **API**: [Official Joke API](https://github.com/15Dkatz/official_joke_api)
+
+## 📂 Project Structure
+
+```
+mem/
+├── public/              # Static assets
+├── src/
+│   ├── components/
+│   │   ├── MemeGenerator.jsx  # Main logic (Canvas, API, State)
+│   │   └── MemeGenerator.css  # Pop Art Styling
+│   ├── App.jsx          # Root Component
+│   ├── index.css        # Global Styles (Halftone Background)
+│   └── main.jsx         # Entry Point
+└── package.json         # Dependencies & Scripts
+```
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+Currently maintained by **Alchemist1910**. Happy Memeing! 🤣
